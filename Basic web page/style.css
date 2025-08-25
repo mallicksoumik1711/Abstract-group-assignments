@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    padding: 10px 20px;
+    background-color: #FFF0C4;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px;
+    border-radius: 50px;
+    background-color: #8C1007;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo-img {
+    height: 40px;
+    border-radius: 50px;
+}
+
+.all-links {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.all-links a {
+    text-decoration: none;
+}
+
+.link-tag {
+    color: #8C1007;
+    background: #FFF0C4;
+    padding: 5px 25px;
+    border-radius: 50px;
+}
+
+.link-tag:hover {
+    background-color: #660B05;
+    color: white;
+}
+
+.join-us a {
+    text-decoration: none;
+    color: white;
+}
+
+/* hero section */
+
+.hero-section {
+    display: flex;
+    margin-top: 24px;
+    align-items: center;
+}
+
+.heading {}
+
+.head p {
+    font-size: 4rem;
+    margin-bottom: 50px;
+    font-weight: bold;
+    color: #8C1007;
+}
+
+.head a {
+    text-decoration: none;
+    color: white;
+}
+
+.join-hero {
+    background-color: #8C1007;
+    padding: 20px 40px;
+    width: 30%;
+    border-radius: 50px;
+}
+
+.join-hero:hover {
+    background-color: #660B05;
+}
+
+.hero-section-img {}
+
+.heroImg {
+    width: 40rem;
+}
+
+.abt {
+    color: #8C1007;
+    font-size: 2rem;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    color: #8C1007;
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.about-box {
+    background: #fff;
+    padding: 20px 30px;
+    max-width: 600px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.about-box h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #8C1007;
+    margin-bottom: 10px;
+}
+
+.about-box p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.list {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.list ul li {
+    padding: 5px 0;
+}
+
+.heading {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
