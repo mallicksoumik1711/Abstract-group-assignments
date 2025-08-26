@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header,
+.navbar {
+    flex-shrink: 0;
+}
+
+.header{
+    background-color: burlywood;
+    padding: 4px 8px;
+    /* border: 2px solid black; */
+}
+
+.header h1{
+    text-align: center;
+}
+
+.navbar{
+    background-color: chocolate;
+    padding: 15px 10px;
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 40px;
+}
+
+.school-info{
+    height: 50px;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+
+.ug{
+    height: 50px;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+
+.internship{
+    height: 50px;
+    border-radius: 50%;
+}
+
+.hero-section{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.main-content{
+    background-color: coral;
+    padding: 4px 8px;
+    /* border: 2px solid black; */
+    width: 60%;
+}
+
+.main-content1 h1{
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.main-content2 h1{
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.aside{
+    background-color: darksalmon;
+    padding: 4px 8px;
+    /* border: 2px solid black; */
+    width: 40%;
+}
+
+.school-aside-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+}
