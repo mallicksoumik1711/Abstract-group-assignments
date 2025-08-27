@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetTravel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <style>
+        .anton-regular {
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body class="bg-light anton-regular">
+
+    <!-- Header Section -->
+    <header class="bg-dark text-white py-3 shadow-sm">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <div class="d-flex align-items-center">
+                <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="45"
+                    height="45" class="me-2">
+                <h1 class="h4 mb-0 fw-bold">Travel-more</h1>
+            </div>
+
+            <div>
+                <a href="#" class="btn btn-light text-primary fw-semibold px-4 py-2">Travel-more</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm border-top border-secondary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">More to go</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active px-3" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="carouselExampleDark" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+                <div class="position-relative">
+                    <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=1600&auto=format&fit=crop&q=80"
+                        class="d-block w-100" alt="..." style="object-fit: cover; height: 85vh;">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+                </div>
+                <div class="carousel-caption d-none d-md-block mb-5">
+                    <h5 class="fw-bold text-white fs-2">First slide label</h5>
+                    <p class="text-white-50 fs-5">Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="4000">
+                <div class="position-relative">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1600&auto=format&fit=crop&q=80"
+                        class="d-block w-100" alt="..." style="object-fit: cover; height: 85vh;">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+                </div>
+                <div class="carousel-caption d-none d-md-block mb-5">
+                    <h5 class="fw-bold text-white fs-2">Second slide label</h5>
+                    <p class="text-white-50 fs-5">Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="position-relative">
+                    <img src="https://plus.unsplash.com/premium_photo-1675368244123-082a84cf3072?w=1600&auto=format&fit=crop&q=80"
+                        class="d-block w-100" alt="..." style="object-fit: cover; height: 85vh;">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+                </div>
+                <div class="carousel-caption d-none d-md-block mb-5">
+                    <h5 class="fw-bold text-white fs-2">Third slide label</h5>
+                    <p class="text-white-50 fs-5">Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-5 mt-0">
+        <div class="container">
+            <h5 class="mb-4">Connect with Me</h5>
+            <div class="d-flex justify-content-center gap-4">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="55"
+                        height="55" class="rounded-circle border border-light p-2"></a>
+
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/919/919853.png" alt="Docker" width="55"
+                        height="55" class="rounded-circle border border-light p-2"></a>
+
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="55"
+                        height="55" class="rounded-circle border border-light p-2"></a>
+
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111628.png" alt="Stack Overflow"
+                        width="55" height="55" class="rounded-circle border border-light p-2"></a>
+            </div>
+            <p class="mt-4 mb-0 small">© 2025 My Website | All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
