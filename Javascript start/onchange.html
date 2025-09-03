@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Form validation</h1>
+
+    <div class="tag">
+        <form>
+            <label>Name: </label>
+            <input type="text" id="name" onchange="validateName()"><br><br>
+            <p id="display-name"></p>
+
+            <label>Number: </label>
+            <input type="number" id="number" onchange="validateNumber()"><br><br>
+            <p id="display-number"></p>
+
+            <label>Date: </label>
+            <input type="date" id="date"><br><br>
+            <p id="display-date"></p>
+
+            <label>Message: </label>
+            <textarea id="message" onchange="validateMessage()"></textarea><br><br>
+            <p id="display-message"></p>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function validateName() {
+            isValid = true;
+
+            let name = document.getElementById("name").value;
+
+
+            if (name.length < 4 || name.length > 30) {
+                document.getElementById("display-name").innerHTML =
+                    "<span style='color:red;'>Name must be between 4 and 30</span>";
+                isValid = false;
+            }
+            else {
+                document.getElementById("display-name").innerHTML = "";
+            }
+
+            return true;
+        }
+
+        function validateNumber() {
+            let number = document.getElementById("number").value;
+
+            if (number < 20 || number > 30 || number === "") {
+                document.getElementById("display-number").innerHTML =
+                    "<span style='color:red;'>Number must be between 20 and 30</span>";
+                return false;
+            } else {
+                document.getElementById("display-number").innerHTML = "";
+                return true;
+            }
+        }
+
+        function validateMessage() {
+            let message = document.getElementById("message").value;
+
+            if (message === "") {
+                document.getElementById("display-message").innerHTML =
+                    "<span style='color:red;'>Message must not be empty</span>";
+                return false;
+            } else if (message.length > 100) {
+                document.getElementById("display-message").innerHTML =
+                    "<span style='color:red;'>Message must not cross 100 characters</span>";
+                return false;
+            } else {
+                document.getElementById("display-message").innerHTML = "";
+                return true;
+            }
+        }
+    </script>
+</body>
+
+</html>
